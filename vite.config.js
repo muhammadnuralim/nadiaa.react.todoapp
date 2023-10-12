@@ -6,6 +6,13 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    port : 5173
+    port : 5173,
+    proxy: {
+        '/api': {
+            target: 'http://nadiapujiutami.showcase.pacmann.ai/',
+            changeOrigin: true,
+            secure: false
+        }
+    }
 },
 })
