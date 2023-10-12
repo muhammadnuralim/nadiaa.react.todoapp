@@ -1,5 +1,5 @@
 import axios from "axios"
-const baseUrl = 'api/tasks'
+const baseUrl = import.meta.env.VITE_APIBASE_URL + 'api/tasks'
 
 let token = null
 let config
