@@ -9,7 +9,7 @@ export default defineConfig({
     port : 5173,
     proxy: {
         '/api': {
-            target: 'http://nadiapujiutami.showcase.pacmann.ai/',
+            target: ' http://nadiapujiutami.showcase.pacmann.ai/',
             changeOrigin: true,
             secure: false
         }
